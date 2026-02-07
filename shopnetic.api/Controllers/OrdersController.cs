@@ -24,7 +24,7 @@ namespace shopnetic.api.Controllers
             _context = context;
         }
 
-        public OrderDto ToDto(Order order) => new OrderDto
+        private OrderDto ToDto(Order order) => new OrderDto
         {
             Id = order.Id,
             UserId = order.UserId,

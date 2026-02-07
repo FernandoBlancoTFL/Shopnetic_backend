@@ -5,6 +5,14 @@
 @accessToken = {{accessToken}}
 @refreshToken = {{refreshToken}}
 
+### Get user information
+
+GET {{host}}/api/auth/me
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
 ### Create a new User
 
 POST {{host}}/api/auth/register

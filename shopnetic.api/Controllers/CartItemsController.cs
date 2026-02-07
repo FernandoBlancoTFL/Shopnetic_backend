@@ -24,7 +24,7 @@ namespace shopnetic.api.Controllers
             _context = context;
         }
 
-        public CartDto ToDto(Cart cart) => new CartDto
+        private CartDto ToDto(Cart cart) => new CartDto
         {
             Id = cart.Id,
             UserId = cart.UserId,

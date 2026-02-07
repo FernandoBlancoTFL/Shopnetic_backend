@@ -4,7 +4,7 @@
 # ⚠️ IMPORTANT: reemplace accessToken to a valid one before doing the test
 @accessToken = {{accessToken}}
 
-### Get car by user id
+### Get cart by user id
 
 GET {{host}}/api/carts/1
 Accept: application/json
