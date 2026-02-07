@@ -12,24 +12,42 @@ You can see the project running at:
 ### 🔧 Installation and Setup
 
 1. Clone the repository.
-
 2. Open the backend folder with Visual Studio and allow it to automatically install NuGet dependencies (you can also do this with commands in VSC, for example).
-
 3. Configure the `appsettings.json` file by replacing it with your database ConnectionString.
-
 4. Generate the database from code (Code First) using the NuGet Package Manager Console:
+
 ```bash
 Add-Migration Initial
-
 Update-Database
 ```
 
 This will automatically load products and users into the database.
 
 5. To run the program locally, use the following command in the project root folder (shopnetic.api folder):
+
 ```bash
 dotnet run
 ```
+
+---
+
+### 📚 API Documentation with Swagger
+
+This application includes **Swagger UI** for interactive API documentation and testing.
+
+**Access Swagger:**
+- Navigate to: **`http://localhost:5281/swagger/index.html`**
+
+**Features:**
+- 📖 Complete API endpoint documentation
+- 🧪 Test endpoints directly from your browser
+- 🔐 JWT authentication support - click the **"Authorize"** button to add your bearer token
+
+**How to authenticate:**
+1. Obtain a JWT token by logging in through the `/api/auth/login` endpoint
+2. Click the **"Authorize"** button (🔒) in the top-right corner of Swagger UI
+3. Enter your token in the format: `Bearer your_token_here`
+4. Click "Authorize" and you're ready to test protected endpoints!
 
 ---
 
@@ -52,16 +70,16 @@ dotnet run
 ### 🛠️ Technologies and Tools Used in the Backend
 
 - 💻 C#
-
 - 🛠️ .NET / Entity Framework Core
-
 - 🗃️ SQL Server Management Studio
+- 📄 Swagger/OpenAPI for API documentation
 
 ---
 
 ### ❗ Important
 
 This repository contains only the backend of the project. It is recommended to use it with the frontend repository.
+
 The frontend repository can be found at: https://github.com/FernandoBlancoTFL/Shopnetic-ecommerce
 
 ### 🔐 CORS Configuration
@@ -71,7 +89,6 @@ This backend uses environment-based CORS configuration.
 **Local Development**
 
 CORS is preconfigured in `appsettings.Development.json` to allow:
-
 - `http://localhost:5173`
 
 No additional setup is required.
@@ -79,6 +96,7 @@ No additional setup is required.
 **Production (recommended)**
 
 Configure allowed frontend origins using environment variables:
+
 ```
 Cors__AllowedOrigins__0=https://my-frontend.com
 ```
