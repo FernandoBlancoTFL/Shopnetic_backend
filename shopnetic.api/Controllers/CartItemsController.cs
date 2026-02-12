@@ -47,7 +47,7 @@ namespace shopnetic.api.Controllers
                 }).ToList() ?? new List<CartItemDto>()
         };
 
-        private int? GetUserId()
+        private int? GetUserId()  // TO DO: ver si se repite este código en varios controllers, corregirlo para evitar duplicación de código.
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (int.TryParse(userIdClaim, out var userId))
@@ -56,7 +56,7 @@ namespace shopnetic.api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CartItemRequestDto>> CreateCartItem(CartItemRequestDto request) // TO DO: verificar si este método devuelve un CartItemRequestDto o un CartDTO
+        public async Task<ActionResult<CartDto>> CreateCartItem(CartItemRequestDto request)
         {
             var userId = GetUserId();
             if (userId == null)
