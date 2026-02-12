@@ -56,7 +56,7 @@ namespace shopnetic.api.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CartItemRequestDto>> CreateCartItem(CartItemRequestDto request)
+        public async Task<ActionResult<CartItemRequestDto>> CreateCartItem(CartItemRequestDto request) // TO DO: verificar si este método devuelve un CartItemRequestDto o un CartDTO
         {
             var userId = GetUserId();
             if (userId == null)
