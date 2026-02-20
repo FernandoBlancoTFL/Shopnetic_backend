@@ -18,3 +18,5 @@
 # App settings locales
 appsettings.Development.json
 appsettings.Local.json
+
+.vs/
