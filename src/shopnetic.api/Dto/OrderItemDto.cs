@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using shopnetic.api.Models;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api.Dto
+namespace Shopnetic.API.Dto
 {
     public class OrderItemDto
     {

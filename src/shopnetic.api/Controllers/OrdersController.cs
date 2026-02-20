@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using shopnetic.api.Data;
-using shopnetic.api.Dto;
-using shopnetic.api.Models;
-using shopnetic.api.Services;
+using Shopnetic.API.Data;
+using Shopnetic.API.Dto;
+using Shopnetic.API.Models;
+using Shopnetic.API.Services;
 
-namespace shopnetic.api.Controllers
+namespace Shopnetic.API.Controllers
 {
     [ApiController]
     [Authorize]
@@ -38,12 +38,12 @@ namespace shopnetic.api.Controllers
             var userId = GetUserId();
             if (userId == null)
                 return Unauthorized();
-            
+
             var orders = await _ordersService.GetOrdersByUserIdAsync(userId.Value);
 
             if (!orders.Any())
                 return NotFound();
-            
+
             return Ok(orders);
         }
 
@@ -53,14 +53,14 @@ namespace shopnetic.api.Controllers
         {
             if (id != orderRequestDto.OrderId)
                 return BadRequest();
-            
+
             try
             {
                 var orderDto = await _ordersService.UpdateOrderAsync(id, orderRequestDto);
-                
+
                 if (orderDto == null)
                     return NotFound();
-                
+
                 return orderDto;
             }
             catch (InvalidOperationException ex)

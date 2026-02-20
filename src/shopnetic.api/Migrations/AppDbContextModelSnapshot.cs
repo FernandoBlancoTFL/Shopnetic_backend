@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using shopnetic.api.Data;
+using Shopnetic.API.Data;
 
 #nullable disable
 
-namespace shopnetic.api.Migrations
+namespace Shopnetic.API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace shopnetic.api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("shopnetic.api.Models.Cart", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Cart", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -54,7 +54,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("Carts");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.CartItem", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.CartItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -91,7 +91,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("CartItems");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Category", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -111,7 +111,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Order", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -145,7 +145,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.OrderItem", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.OrderItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -174,7 +174,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Product", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -247,7 +247,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.ProductImage", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.ProductImage", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -269,7 +269,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("ProductsImages");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Review", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Review", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -305,7 +305,7 @@ namespace shopnetic.api.Migrations
                     b.ToTable("Reviews");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.User", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -363,9 +363,9 @@ namespace shopnetic.api.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Cart", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Cart", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.User", "User")
+                    b.HasOne("Shopnetic.API.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -374,15 +374,15 @@ namespace shopnetic.api.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.CartItem", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.CartItem", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.Cart", "Cart")
+                    b.HasOne("Shopnetic.API.Models.Cart", "Cart")
                         .WithMany("Items")
                         .HasForeignKey("CartId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("shopnetic.api.Models.Product", "Product")
+                    b.HasOne("Shopnetic.API.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -393,9 +393,9 @@ namespace shopnetic.api.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Order", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Order", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.User", "User")
+                    b.HasOne("Shopnetic.API.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -404,15 +404,15 @@ namespace shopnetic.api.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.OrderItem", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.OrderItem", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.Order", "Order")
+                    b.HasOne("Shopnetic.API.Models.Order", "Order")
                         .WithMany("Items")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("shopnetic.api.Models.Product", "Product")
+                    b.HasOne("Shopnetic.API.Models.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -423,15 +423,15 @@ namespace shopnetic.api.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Product", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Product", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.Category", "Category")
+                    b.HasOne("Shopnetic.API.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("shopnetic.api.Models.Dimensions", "Dimensions", b1 =>
+                    b.OwnsOne("Shopnetic.API.Models.Dimensions", "Dimensions", b1 =>
                         {
                             b1.Property<int>("ProductId")
                                 .HasColumnType("int");
@@ -453,7 +453,7 @@ namespace shopnetic.api.Migrations
                                 .HasForeignKey("ProductId");
                         });
 
-                    b.OwnsOne("shopnetic.api.Models.Meta", "Meta", b1 =>
+                    b.OwnsOne("Shopnetic.API.Models.Meta", "Meta", b1 =>
                         {
                             b1.Property<int>("ProductId")
                                 .HasColumnType("int");
@@ -489,9 +489,9 @@ namespace shopnetic.api.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.ProductImage", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.ProductImage", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.Product", "Product")
+                    b.HasOne("Shopnetic.API.Models.Product", "Product")
                         .WithMany("Images")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -500,9 +500,9 @@ namespace shopnetic.api.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Review", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Review", b =>
                 {
-                    b.HasOne("shopnetic.api.Models.Product", "Product")
+                    b.HasOne("Shopnetic.API.Models.Product", "Product")
                         .WithMany("Reviews")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -511,22 +511,22 @@ namespace shopnetic.api.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Cart", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Cart", b =>
                 {
                     b.Navigation("Items");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Category", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Category", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Order", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Order", b =>
                 {
                     b.Navigation("Items");
                 });
 
-            modelBuilder.Entity("shopnetic.api.Models.Product", b =>
+            modelBuilder.Entity("Shopnetic.API.Models.Product", b =>
                 {
                     b.Navigation("Images");
 

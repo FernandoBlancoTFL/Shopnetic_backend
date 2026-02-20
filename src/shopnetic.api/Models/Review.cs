@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace shopnetic.api.Models
+namespace Shopnetic.API.Models
 {
     public class Review
     {
-        public int Id { get; set;}
+        public int Id { get; set; }
         public int Rating { get; set; }
         public String Comment { get; set; }
         public DateTime Date { get; set; }

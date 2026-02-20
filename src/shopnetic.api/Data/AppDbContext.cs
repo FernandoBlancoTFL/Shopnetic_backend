@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using shopnetic.api.Models;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api.Data
+namespace Shopnetic.API.Data
 {
     public class AppDbContext : DbContext
     {

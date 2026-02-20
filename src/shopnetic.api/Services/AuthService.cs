@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using shopnetic.api.Data;
-using shopnetic.api.Dto;
-using shopnetic.api.Models;
+using Shopnetic.API.Data;
+using Shopnetic.API.Dto;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api.Services
+namespace Shopnetic.API.Services
 {
     public class AuthService(AppDbContext context, IConfiguration configuration) : IAuthService
     {

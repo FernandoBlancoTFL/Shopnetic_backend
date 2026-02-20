@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using shopnetic.api.Data;
-using shopnetic.api.Dto;
-using shopnetic.api.Models;
+using Shopnetic.API.Data;
+using Shopnetic.API.Dto;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api.Controllers
+namespace Shopnetic.API.Controllers
 {
     [ApiController]
     [Authorize]

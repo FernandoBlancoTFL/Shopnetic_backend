@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using shopnetic.api.Data;
-using shopnetic.api.Models;
+using Shopnetic.API.Data;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api
+namespace Shopnetic.API
 {
     public static class SeedData
     {

@@ -5,11 +5,11 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using shopnetic.api.Data;
-using shopnetic.api.Dto;
-using shopnetic.api.Models;
+using Shopnetic.API.Data;
+using Shopnetic.API.Dto;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api.Services
+namespace Shopnetic.API.Services
 {
     public class OrdersService : IOrdersService
     {
@@ -55,7 +55,7 @@ namespace shopnetic.api.Services
 
             return orders.Select(ToDto).ToList();
         }
-        
+
         public async Task<OrderDto> UpdateOrderAsync(int id, OrderRequestDto orderRequestDto)
         {
             var order = await _context.Orders
@@ -66,10 +66,10 @@ namespace shopnetic.api.Services
                     .ThenInclude(oi => oi.Product)
                         .ThenInclude(p => p.Category)
                 .FirstOrDefaultAsync(o => o.Id == id);
-            
-            if (order == null) 
+
+            if (order == null)
                 return null;
-            
+
             // Validación de stock
             if (orderRequestDto.Status != null)
             {
@@ -80,7 +80,7 @@ namespace shopnetic.api.Services
                         throw new InvalidOperationException("Not enough product stock!");
                     }
                 }
-                
+
                 order.Status = orderRequestDto.Status;
                 foreach (var item in order.Items)
                 {
@@ -88,14 +88,14 @@ namespace shopnetic.api.Services
                         item.Product.Stock -= item.Quantity; //Ver si realmente está descontando la cantidad
                 }
             }
-            
+
             if (orderRequestDto.ShipmentPrice != null)
             {
                 order.ShipmentPrice = (decimal)orderRequestDto.ShipmentPrice;
             }
-            
+
             await _context.SaveChangesAsync();
-            
+
             return ToDto(order);
         }
     }

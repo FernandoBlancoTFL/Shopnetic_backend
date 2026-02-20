@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\shopnetic.api\shopnetic.api.csproj" />
+    <ProjectReference Include="..\..\src\Shopnetic.API\Shopnetic.API.csproj" />
   </ItemGroup>
 
 </Project>

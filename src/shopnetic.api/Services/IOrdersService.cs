@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using shopnetic.api.Dto;
+using Shopnetic.API.Dto;
 
-namespace shopnetic.api.Services
+namespace Shopnetic.API.Services
 {
     public interface IOrdersService
     {

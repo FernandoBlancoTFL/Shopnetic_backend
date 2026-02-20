@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using shopnetic.api.Data;
-using shopnetic.api.Models;
+using Shopnetic.API.Data;
+using Shopnetic.API.Models;
 
-namespace shopnetic.api.Controllers
+namespace Shopnetic.API.Controllers
 {
     [ApiController]
     [Authorize(Roles = "admin")]

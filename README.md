@@ -23,7 +23,7 @@ Update-Database
 
 This will automatically load products and users into the database.
 
-5. To run the program locally, use the following command in the project root folder (shopnetic.api folder):
+5. To run the program locally, use the following command in the project root folder (Shopnetic.API folder):
 
 ```bash
 dotnet run
@@ -53,7 +53,7 @@ This application includes **Swagger UI** for interactive API documentation and t
 
 ### 💡 Tips
 
-- The application endpoints can be executed directly from VSC. To do this, you need the REST Client extension. Once installed, navigate to the "backend/shopnetic.api/rest-client" folder to view the different endpoints along with sample requests.
+- The application endpoints can be executed directly from VSC. To do this, you need the REST Client extension. Once installed, navigate to the "backend/Shopnetic.API/rest-client" folder to view the different endpoints along with sample requests.
 
 ---
 

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
-using shopnetic.api.Data;
-using shopnetic.api.Models;
-using shopnetic.api.Services;
+using Shopnetic.API.Data;
+using Shopnetic.API.Models;
+using Shopnetic.API.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace shopnetic.api.Tests.Services
+namespace Shopnetic.API.Tests.Services
 {
     public class OrdersServiceTests
     {
@@ -72,6 +72,6 @@ namespace shopnetic.api.Tests.Services
         //     Assert.True(result.Id > 0);
         // }
 
-        
+
     }
 }

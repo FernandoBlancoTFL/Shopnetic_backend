@@ -1,4 +1,4 @@
-﻿namespace shopnetic.api.Tests;
+﻿namespace Shopnetic.API.Tests;
 
 public class UnitTest1
 {

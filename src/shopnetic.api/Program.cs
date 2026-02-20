@@ -2,9 +2,9 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using shopnetic.api;
-using shopnetic.api.Data;
-using shopnetic.api.Services;
+using Shopnetic.API;
+using Shopnetic.API.Data;
+using Shopnetic.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

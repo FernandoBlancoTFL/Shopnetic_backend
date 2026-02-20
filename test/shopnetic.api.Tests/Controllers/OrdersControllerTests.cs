@@ -4,14 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 using Moq;
-using shopnetic.api.Services;
-using shopnetic.api.Controllers;
-using shopnetic.api.Dto;
+using Shopnetic.API.Services;
+using Shopnetic.API.Controllers;
+using Shopnetic.API.Dto;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 
-namespace shopnetic.api.Tests.Controllers
+namespace Shopnetic.API.Tests.Controllers
 {
     public class OrdersControllerTests
     {

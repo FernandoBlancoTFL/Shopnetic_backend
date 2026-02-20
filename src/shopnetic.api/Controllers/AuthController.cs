@@ -5,12 +5,12 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using shopnetic.api.Data;
-using shopnetic.api.Dto;
-using shopnetic.api.Models;
-using shopnetic.api.Services;
+using Shopnetic.API.Data;
+using Shopnetic.API.Dto;
+using Shopnetic.API.Models;
+using Shopnetic.API.Services;
 
-namespace shopnetic.api.Controllers
+namespace Shopnetic.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

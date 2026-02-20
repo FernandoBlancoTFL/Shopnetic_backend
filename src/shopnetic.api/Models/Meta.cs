@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace shopnetic.api.Models
+namespace Shopnetic.API.Models
 {
     [Owned]
     public class Meta
