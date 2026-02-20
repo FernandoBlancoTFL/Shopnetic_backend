@@ -1,0 +1,12 @@
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\bin\Debug\net9.0\Shopnetic.Infrastructure.deps.json
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\bin\Debug\net9.0\Shopnetic.Infrastructure.dll
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\bin\Debug\net9.0\Shopnetic.Infrastructure.pdb
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.AssemblyInfo.cs
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.sourcelink.json
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.dll
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\refint\Shopnetic.Infrastructure.dll
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\Shopnetic.Infrastructure.pdb
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\src\Shopnetic.Infrastructure\obj\Debug\net9.0\ref\Shopnetic.Infrastructure.dll
