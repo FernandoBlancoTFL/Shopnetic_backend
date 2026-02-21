@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "miVDDXOuz/o=",
+  "dgSpecHash": "2pPqph+giO8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fernando\\Desktop\\Cursos\\C#\\New_Projects\\Shopnetic_backend\\test\\shopnetic.api.Tests\\shopnetic.api.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Fernando\\Desktop\\Cursos\\C#\\New_Projects\\Shopnetic_backend\\test\\Shopnetic.API.Tests\\Shopnetic.API.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fernando\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Fernando\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

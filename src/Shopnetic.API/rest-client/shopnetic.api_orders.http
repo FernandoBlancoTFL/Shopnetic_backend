@@ -1,0 +1,27 @@
+@host = http://localhost:5281
+
+# ⚠️ IMPORTANTE: reemplazar accessToken por uno válido antes de hacer la prueba
+# ⚠️ IMPORTANT: reemplace accessToken to a valid one before doing the test
+@accessToken = {{accessToken}}
+
+### Get user orders by user id
+
+GET {{host}}/api/orders
+Accept: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+### Update existing order status
+
+PUT {{host}}/api/orders/45
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "OrderId" : 45,
+    "Status" : null,
+    "ShipmentPrice" : 10.00
+}
+
+###

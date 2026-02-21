@@ -332,9 +332,9 @@ C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopneti
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopnetic.API.Tests.AssemblyInfo.cs
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopnetic.API.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopnetic.API.Tests.sourcelink.json
+C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopneti.0D539B8F.Up2Date
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopnetic.API.Tests.dll
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\refint\Shopnetic.API.Tests.dll
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopnetic.API.Tests.pdb
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\Shopnetic.API.Tests.genruntimeconfig.cache
 C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\Shopnetic.API.Tests\obj\Debug\net9.0\ref\Shopnetic.API.Tests.dll
-C:\Users\Fernando\Desktop\Cursos\C#\New_Projects\Shopnetic_backend\test\shopnetic.api.Tests\obj\Debug\net9.0\shopneti.3DE4C03B.Up2Date
