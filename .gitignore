@@ -1,6 +1,6 @@
 # Archivos compilados
-/bin/
-/obj/
+**/bin/
+**/obj/
 
 # VS/VSCode config
 .vscode/
