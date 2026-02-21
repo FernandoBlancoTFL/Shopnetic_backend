@@ -4,8 +4,7 @@ This project is the backend for an e-commerce application developed as the final
 
 ## 🚀 Live Demo
 
-You can see the project running at:  
-[🔗 View Demo](https://shopneticfb.netlify.app/)
+You can see the project running at: [🔗 View Demo](https://shopneticfb.netlify.app/)
 
 ---
 
@@ -51,6 +50,35 @@ This application includes **Swagger UI** for interactive API documentation and t
 
 ---
 
+### 🧪 Running Tests
+
+This project includes a test suite to verify the correctness of the application's logic.
+
+Navigate to the test project folder:
+
+```bash
+cd test/shopnetic.api.Tests
+```
+
+**Run all tests:**
+```bash
+dotnet test
+```
+
+**Run all tests from a specific class:**
+```bash
+dotnet test --filter "FullyQualifiedName~Class_Name"
+```
+
+**Run a specific test method:**
+```bash
+dotnet test --filter "FullyQualifiedName~Class_Name.Method_Name"
+```
+
+> 💡 Replace `Class_Name` and `Method_Name` with the actual names from the test files.
+
+---
+
 ### 💡 Tips
 
 - The application endpoints can be executed directly from VSC. To do this, you need the REST Client extension. Once installed, navigate to the "backend/Shopnetic.API/rest-client" folder to view the different endpoints along with sample requests.
@@ -78,25 +106,20 @@ This application includes **Swagger UI** for interactive API documentation and t
 
 ### ❗ Important
 
-This repository contains only the backend of the project. It is recommended to use it with the frontend repository.
-
-The frontend repository can be found at: https://github.com/FernandoBlancoTFL/Shopnetic-ecommerce
+This repository contains only the backend of the project. It is recommended to use it with the frontend repository. The frontend repository can be found at: https://github.com/FernandoBlancoTFL/Shopnetic-ecommerce
 
 ### 🔐 CORS Configuration
 
 This backend uses environment-based CORS configuration.
 
 **Local Development**
-
 CORS is preconfigured in `appsettings.Development.json` to allow:
 - `http://localhost:5173`
 
 No additional setup is required.
 
 **Production (recommended)**
-
 Configure allowed frontend origins using environment variables:
-
 ```
 Cors__AllowedOrigins__0=https://my-frontend.com
 ```
@@ -104,9 +127,4 @@ Cors__AllowedOrigins__0=https://my-frontend.com
 This avoids modifying source code or configuration files in production environments.
 
 ---
-
-<div align="center">
-
 ⭐ **If you found this project useful, consider giving it a star on GitHub** ⭐
-
-</div>

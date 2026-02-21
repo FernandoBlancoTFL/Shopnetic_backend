@@ -1,0 +1,50 @@
+@host = http://localhost:5281
+
+### Get all products
+
+GET {{host}}/api/products
+Accept: application/json
+
+###
+
+### Get product by id
+
+GET {{host}}/api/products/4
+Accept: application/json
+
+###
+
+### Get products by category
+
+GET {{host}}/api/products/category/smartphones
+Accept: application/json
+
+###
+
+### Get products by search from query
+
+GET {{host}}/api/products/search?q=phone
+Accept: application/json
+
+###
+
+### Get products by search using limit and skip
+
+GET {{host}}/api/products?limit=10&skip=2&select=title,price
+Accept: application/json
+
+###
+
+### Get products by search using asc and desc
+
+GET {{host}}/api/products?sortBy=price&order=desc&select=title,price
+Accept: application/json
+
+###
+
+### Get products categories
+
+GET {{host}}/api/products/category-list
+Accept: application/json
+
+###

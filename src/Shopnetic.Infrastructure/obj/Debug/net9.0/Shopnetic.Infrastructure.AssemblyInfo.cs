@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shopnetic.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ebc4cfe78ae09271e6d88be6d81c8c9872edc91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0c07e632d9810628458037a538fffaab6af3795")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shopnetic.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shopnetic.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

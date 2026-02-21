@@ -1,0 +1,46 @@
+@host = http://localhost:5281
+
+# ⚠️ IMPORTANTE: reemplazar accessToken por uno válido antes de hacer la prueba
+# ⚠️ IMPORTANT: reemplace accessToken to a valid one before doing the test
+@accessToken = {{accessToken}}
+
+### Create a new CartItem
+
+POST {{host}}/api/cartItems
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "productId": 1,
+    "quantity" : 2
+}
+
+###
+
+### Update existing cartItem by productId
+
+PUT {{host}}/api/cartItems/1
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+    "productId" : 1,
+    "quantity": 0
+}
+
+###
+
+### Delete CartItem by ProductId
+
+DELETE {{host}}/api/cartItems/1
+Authorization: Bearer {{accessToken}}
+
+###
+
+### Empty user shoppingCart
+
+DELETE {{host}}/api/cartItems/empty-car
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+###

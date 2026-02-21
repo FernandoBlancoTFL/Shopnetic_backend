@@ -1,0 +1,57 @@
+@host = http://localhost:5281
+
+# ⚠️ IMPORTANTE: reemplazar accessToken y refreshToken por uno válido antes de hacer la prueba
+# ⚠️ IMPORTANT: reemplace accessToken and refreshToken to a valid one before doing the test
+@accessToken = {{accessToken}}
+@refreshToken = {{refreshToken}}
+
+### Get user information
+
+GET {{host}}/api/auth/me
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+###
+
+### Create a new User
+
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Juan",
+    "lastName" : "Lopez",
+    "userName" : "JuanLZ18",
+    "email" : "juan@mail.com",
+    "password" : "juan123",
+    "description" : "Hola! soy Juan",
+    "country" : "Argentina",
+    "role" : "client",
+    "image" : "https://randomuser.me/api/portraits/men/75.jpg"
+}
+
+###
+
+### Login a User
+
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "1234"
+}
+
+###
+
+### Refresh User Token
+
+POST {{host}}/api/auth/refresh-token
+Content-Type: application/json
+
+{
+    "accessToken": "{{accessToken}}",
+    "refreshToken": "{{refreshToken}}"
+}
+
+###
